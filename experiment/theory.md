@@ -12,10 +12,15 @@ Inorder to obtain string2 from string1 by deleting 0 or more characters it is fa
 **Mathematical formulation**
 
 Suppose the length of string A is M and string B is N we need to find a N tuple (X[0],X[1],...,X[N-1]) such that X[i] < X[i+1] for 0<=i<=N-2 and A[X[i]] = B[i] for 0<=i<=N-1. Why this formulation is correct? B[0] occurs at X[0]
+
 B[1] occurs at X[1]
+
 ..
+
 ..
+
 ..
+
 B[N-1] occurs at X[N-1]
 
 

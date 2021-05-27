@@ -6,13 +6,16 @@ A palindrome is a symmetric character sequence that looks the same when read bac
 
 Write a program that detects palindromes. Your program should accept a string from the key board and output YES/NO.
 
+
 **Input Specification**
 
 Input will contain a string S entered from keyboard, with number of characters less than 1000.
 
+
 **Output Specification**
 
 Output must be either "YES" or "NO"(quotes for clarity) depending upon whether or not it is a palindrome.
+
 
 **Sample Input and Output**
 
@@ -27,19 +30,25 @@ Output: NO
 
 Given two strings, PRINT (YES or NO) whether the second string can be obtained from the first by deletion of none, one or more characters.
 
+
 **Input Specification**
 
 Input will contain two strings separated by a space and size of each string is at max 107.
+
 
 **Output Specification**
 
 Output must be either "YES" or "NO" depending on whether 2nd string can be obtained from 1st string.
 
+
 **Sample Input and Output**
 
 Input: hyderabad her
+
 Output: YES
+
 Input: hyderabad dear
+
 Output: NO
 
 
