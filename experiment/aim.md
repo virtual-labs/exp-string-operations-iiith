@@ -2,27 +2,27 @@ String is traditionally a sequence of characters, either as a literal constant o
 
 **Problem 1:**
 
-A palindrome is a symmetric character sequence that looks the same when read backwards, i.e. from right to left. Interestingly, human being usually discards blank spaces and punctuation marks while recognizing a palindromes like: (a) ¡°Madam, I¡¯m Adam.¡± (b) ¡°Eve.¡± etc.
+A palindrome is a symmetric character sequence that looks the same when read backwards, i.e. from right to left. Interestingly, human being usually discards blank spaces and punctuation marks while recognizing a palindromes like: (a) "Madam, I'm Adam."(b)"Eve." etc.  
 
-Write a program that detects palindromes. Your program should accept a string from the key board and output YES/NO.
+Write a program that detects palindromes. Your program should accept a string from the key board and output YES/NO.  
 
 
 **Input Specification**
 
-Input will contain a string S entered from keyboard, with number of characters less than 1000.
+Input will contain a string S entered from keyboard, with number of characters less than 1000.  
 
 
 **Output Specification**
 
-Output must be either "YES" or "NO"(quotes for clarity) depending upon whether or not it is a palindrome.
+Output must be either "YES" or "NO"(quotes for clarity) depending upon whether or not it is a palindrome.  
 
 
 **Sample Input and Output**
 
-Input: Madam, I'm Adam
-Output:YES
-Input: Eve.
-Output: NO
+Input: Madam, I'm Adam  
+Output:YES  
+Input: Eve.  
+Output: NO  
 
 
 
@@ -33,22 +33,19 @@ Given two strings, PRINT (YES or NO) whether the second string can be obtained f
 
 **Input Specification**
 
-Input will contain two strings separated by a space and size of each string is at max 107.
+Input will contain two strings separated by a space and size of each string is at max 107.  
 
 
 **Output Specification**
 
-Output must be either "YES" or "NO" depending on whether 2nd string can be obtained from 1st string.
+Output must be either "YES" or "NO" depending on whether 2nd string can be obtained from 1st string.  
 
 
 **Sample Input and Output**
 
-Input: hyderabad her
-
-Output: YES
-
-Input: hyderabad dear
-
-Output: NO
+Input: hyderabad her  
+Output: YES  
+Input: hyderabad dear  
+Output: NO  
 
 
