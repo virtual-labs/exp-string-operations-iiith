@@ -1,1 +1,5 @@
-- To learn to solve problems related to Strings using Computer Programming. 
+- To understand the definition, properties, and representations of strings in computer science.
+- To develop algorithms for detecting palindromes and checking subsequences in strings.
+- To analyze the computational complexity of common string operations.
+- To apply string manipulation techniques for solving real-world problems.
+- To strengthen analytical and programming skills by working with string-based challenges.

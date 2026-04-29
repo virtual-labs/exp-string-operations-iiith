@@ -1,37 +1,108 @@
-**Problem 1**
+Strings are fundamental data types in computer science, representing sequences of characters. They are used to store and manipulate text, process user input, and solve a wide range of computational problems. Understanding string operations is essential for programming, algorithms, and problem solving.
 
-A palindrome is a string which reads same wheter it is read from start to end of from end to the start. In literature, however, even the capitalization of words and punctuations are ignored. So, "Rats live on no evil stars." is also a palindrome. Detection of such palindromes can be done by creating a new string in which all the punctuations have been removed and all the upper case characters have been converted to lower case characters, and then doing a test for plaindome on the new string.  
+---
 
-Alternatively, one can create two indices and put them at the end and beginning of the string. The index at the beginning moves towards the end and vice versa. If a character at any of the indices is not an alphabet the corresponding indice is moved until an alphabet is encountered. If the alphabet is in Upper case, then it is converted into lower case. Now, the values at the indices are compared and if they are not same then the string is not a palindome. Otherwise, the check is repeated for new values of indices obtained by moving them by suffiecient amount so that an alphabet is encountered. If at any time the indices are coincident or the indices cross each other, then the string is a palindrome.  
- 
+### What is a String?
 
-**Problem 2**
+A **string** is a sequence of characters, such as letters, digits, or symbols. Strings can be mutable (modifiable) or immutable (fixed after creation), depending on the programming language. They are typically stored as arrays of characters and can be manipulated using various operations.
 
-Inorder to obtain string2 from string1 by deleting 0 or more characters it is fairly obvious that the characters in string2 must appear in the same order as in string1.  
+<img src="./images/experiment-image.png" alt="Alphabet: Example of string characters" width="400"/>
 
-**Mathematical formulation**
+_Figure: The English alphabet (upper and lower case) — the basic building blocks for string operations._
 
-Suppose the length of string A is M and string B is N we need to find a N tuple (X[0],X[1],...,X[N-1]) such that X[i] < X[i+1] for 0<=i<=N-2 and A[X[i]] = B[i] for 0<=i<=N-1. Why this formulation is correct? B[0] occurs at X[0]  
-B[1] occurs at X[1]  
-..  
-..  
-..  
-B[N-1] occurs at X[N-1]  
+Common string operations include:
 
+- Accessing individual characters
+- Concatenation (joining strings)
+- Substrings (extracting parts of a string)
+- Searching and pattern matching
+- Reversing and comparing strings
 
-Now, we remove all other characters from A except those which appear at positions indicated by array X. Then we get string B.Thus the problem formulation is correct. The order constraint between X[i]'s is element because we want the characters in B to appear in order in A.
+---
 
+### Problems Explored in This Experiment
 
-**Solution**
+In this experiment, you will solve two classic problems that illustrate important string operations:
 
-So now once we have stated the problem mathematically we would like to know how can we find array X subjected to the constraints mentioned.Lets see how can we find X[0]. You must be apply the same logic on how to find other values of array X once you are familier with X[0]. X[0] has only one constraint to be satisfied which is A[X[0]] = B[0] . There can be many values of X[0] which can satisfy the above constraint. So which value should X[0] take?  
+### 1. Palindrome Detection
 
+A **palindrome** is a string that reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization. For example:
 
+- "Madam, I'm Adam." is a palindrome.
+- "Eve." is not a palindrome.
 
-**Proofs**
+#### Problem Statement
 
-Suppose S is a set of values which X[0] can take. We prove that X[0] should take the minimum value, amongst all the members of set S. If |S|=1 , then it is obviously valid. So, assume |S|>=2. We will deal with |S|=0 case later. Lets say X[0] = b and the minimum value of the set S is a i.e a < X[0]. Since we have choosen X[0] as b we need to search for B[1] [b+1 m] beacuse B[1]> B[0]. It can happen that B[1] is not present in [b+1 m] at all which would imply that string B cannot be a subsequence of string A. But suppose the character is present in [a+1 b] and X[0]=a then it is possible that string B might be a subsequence of string A. Thus, X[0] must take the minimum value of set S i.e the position where first B[0] is same as chracter of A should be chosen as X[0].  
+Write a program that detects palindromes. Your program should accept a string from the keyboard and output YES or NO.
 
-Now, if X[0] = a, we shall search for X[1] in [a+1,M] and similarly X[2] in [X[1]+1,M] and for X[i] in [X[i-1]+1,M].Thus if we can find the array X then we say YES else NO.  
+**Input Specification:**
 
+- Input will contain a string S entered from keyboard, with fewer than 1000 characters.
 
+**Output Specification:**
+
+- Output must be either "YES" or "NO" depending on whether or not it is a palindrome.
+
+**Sample Input and Output:**
+
+```
+Input: Madam, I'm Adam
+Output: YES
+Input: Eve.
+Output: NO
+```
+
+**How to detect a palindrome?**
+
+1. Remove all non-alphabetic characters and convert all letters to the same case (usually lowercase).
+2. Compare the cleaned string to its reverse. If they are the same, it is a palindrome.
+
+---
+
+### 2. Subsequence Checking
+
+Given two strings, determine if the second string can be obtained from the first by deleting zero or more characters (without reordering the remaining characters). This is called checking if the second string is a **subsequence** of the first.
+
+#### Problem Statement
+
+Write a program to print YES or NO depending on whether the second string can be obtained from the first by deleting none, one, or more characters.
+
+**Input Specification:**
+
+- Input will contain two strings separated by a space; the size of each string is at most 107 characters.
+
+**Output Specification:**
+
+- Output must be either "YES" or "NO" depending on whether the second string can be obtained from the first string.
+
+**Sample Input and Output:**
+
+```
+Input: hyderabad her
+Output: YES
+Input: hyderabad dear
+Output: NO
+```
+
+**How to check for a subsequence?**
+
+1. Start with two pointers, one for each string.
+2. Move through the first string, advancing the pointer in the second string whenever a matching character is found.
+3. If you reach the end of the second string, it is a subsequence.
+
+**Mathematical Formulation:**
+Suppose the length of string A is M and string B is N. We need to find an N-tuple (X[0], X[1], ..., X[N-1]) such that X[i] < X[i+1] for 0 ≤ i ≤ N-2 and A[X[i]] = B[i] for 0 ≤ i ≤ N-1. If such a tuple exists, B is a subsequence of A.
+
+---
+
+### Why Study String Operations?
+
+String problems are everywhere: in text processing, data validation, search engines, DNA sequencing, and more. Mastering string operations helps you:
+
+- Develop efficient algorithms for real-world applications
+- Strengthen your programming and analytical skills
+- Understand the foundations of pattern matching and text manipulation
+
+---
+
+_This experiment encourages you to implement algorithms for palindrome detection and subsequence checking, deepening your understanding of string manipulation and programming._
