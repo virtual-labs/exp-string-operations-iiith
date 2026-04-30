@@ -1,47 +1,175 @@
-[
-{"question":"1. The execution of a loop typically starts with:",
-"answers":{
-            "a":"initialization statements",
-            "b":"Loop body",
-            "c":"test condition",
-            "d":"update statements"
-          },
-"correctAnswer":"a"},
-
-{"question":"2. The break statement is used to exit from:",
-"answers":{
-            "a":"an if statement",
-            "b":"a for loop",
-            "c":"a program",
-            "d":"the main( ) function"
-          },
-"correctAnswer":"b"}, 
-
-{"question":"3. A do-while loop is useful when we want that the statements within the loop must be executed",
-"answers":{
-            "a":"only once",
-            "b":"At Least Once",
-            "c":"More than once",
-            "d":"None of the above"
-          },
-"correctAnswer":"b"},
-
-{"question":"4. In what sequence the initialization, testing and execution of body is done in a do-while loop ",
-"answers":{
-            "a":"Initialization, execution of body, testing",
-            "b":"Execution of body, initialization, testing",
-            "c":"Initialization, testing, execution of body",
-            "d":"None of the above"
-          },
-"correctAnswer":"a"},
-
-{"question":"5. Which looping process checks the test condition at the end of the loop?",
-"answers":{
-            "a":"for",
-            "b":"while",
-            "c":"do-while",
-            "d":"No looping peocess check condition at the end"
-          },
-"correctAnswer":"c"}
-
-]
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What is a string in computer science?",
+      "answers": {
+        "a": "A sequence of characters",
+        "b": "A single character",
+        "c": "A number",
+        "d": "A type of loop"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. A string is a sequence of characters.",
+        "b": "Incorrect. A single character is not a string.",
+        "c": "Incorrect. A string is not a number.",
+        "d": "Incorrect. A string is not a loop."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following is a palindrome?",
+      "answers": {
+        "a": "racecar",
+        "b": "hello",
+        "c": "world",
+        "d": "python"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. 'racecar' reads the same forwards and backwards.",
+        "b": "Incorrect. 'hello' is not a palindrome.",
+        "c": "Incorrect. 'world' is not a palindrome.",
+        "d": "Incorrect. 'python' is not a palindrome."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What is the output for the input 'Madam, I'm Adam' in a palindrome detector (ignoring spaces and punctuation)?",
+      "answers": {
+        "a": "YES",
+        "b": "NO",
+        "c": "Error",
+        "d": "madam"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. The cleaned string is a palindrome.",
+        "b": "Incorrect. It is a palindrome.",
+        "c": "Incorrect. There is no error.",
+        "d": "Incorrect. 'madam' is not the output format."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Which operation checks if one string can be obtained from another by deleting some characters (without reordering)?",
+      "answers": {
+        "a": "Substring",
+        "b": "Subsequence",
+        "c": "Concatenation",
+        "d": "Reversal"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Substring requires contiguous characters.",
+        "b": "Correct. Subsequence allows deletion without reordering.",
+        "c": "Incorrect. Concatenation joins strings.",
+        "d": "Incorrect. Reversal reverses the string."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. What is the output for input 'hyderabad her' in the subsequence checker?",
+      "answers": {
+        "a": "YES",
+        "b": "NO",
+        "c": "Error",
+        "d": "her"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. 'her' is a subsequence of 'hyderabad'.",
+        "b": "Incorrect. It is a subsequence.",
+        "c": "Incorrect. There is no error.",
+        "d": "Incorrect. 'her' is not the output format."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which of the following is NOT a string operation?",
+      "answers": {
+        "a": "Concatenation",
+        "b": "Reversal",
+        "c": "Multiplication",
+        "d": "Substring extraction"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Correct. Concatenation is a string operation.",
+        "b": "Correct. Reversal is a string operation.",
+        "c": "Incorrect. Multiplication is not a standard string operation.",
+        "d": "Correct. Substring extraction is a string operation."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Which of the following best describes a palindrome?",
+      "answers": {
+        "a": "A string that reads the same forwards and backwards",
+        "b": "A string with only vowels",
+        "c": "A string with only consonants",
+        "d": "A string with spaces only"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Palindrome reads the same both ways.",
+        "b": "Incorrect. Vowels are not required.",
+        "c": "Incorrect. Consonants are not required.",
+        "d": "Incorrect. Spaces are not required."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. What is the time complexity of checking if a string of length n is a palindrome?",
+      "answers": {
+        "a": "O(1)",
+        "b": "O(n)",
+        "c": "O(n^2)",
+        "d": "O(log n)"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. O(1) is not correct for arbitrary n.",
+        "b": "Correct. Each character must be checked, so O(n).",
+        "c": "Incorrect. O(n^2) is too high.",
+        "d": "Incorrect. O(log n) is too low."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which of the following statements about subsequences is true?",
+      "answers": {
+        "a": "A subsequence must be contiguous",
+        "b": "A subsequence can skip characters but must preserve order",
+        "c": "A subsequence can reorder characters",
+        "d": "A subsequence is always shorter than the original string"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Contiguity is not required.",
+        "b": "Correct. Order is preserved, but characters can be skipped.",
+        "c": "Incorrect. Reordering is not allowed.",
+        "d": "Incorrect. A subsequence can be the same length."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "10. Which of the following is an application of string operations?",
+      "answers": {
+        "a": "Text search",
+        "b": "DNA sequencing",
+        "c": "Data validation",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Correct. Text search uses string operations.",
+        "b": "Correct. DNA sequencing uses string operations.",
+        "c": "Correct. Data validation uses string operations.",
+        "d": "Correct. All of these are applications of string operations."
+      },
+      "difficulty": "advanced"
+    }
+  ]
+}
