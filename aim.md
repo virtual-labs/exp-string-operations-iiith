@@ -1,0 +1,1 @@
+To explore and understand the properties, algorithms, and problem-solving techniques related to strings, focusing on palindromes, subsequences, and other fundamental string operations using programming.
