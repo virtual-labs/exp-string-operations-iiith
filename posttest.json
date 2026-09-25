@@ -1,0 +1,175 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Which of the following is NOT a palindrome?",
+      "answers": {
+        "a": "level",
+        "b": "noon",
+        "c": "apple",
+        "d": "radar"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Correct. 'level' is a palindrome.",
+        "b": "Correct. 'noon' is a palindrome.",
+        "c": "Incorrect. 'apple' is not a palindrome.",
+        "d": "Correct. 'radar' is a palindrome."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What is the output for input 'racecar' in a palindrome detector?",
+      "answers": {
+        "a": "YES",
+        "b": "NO",
+        "c": "racecar",
+        "d": "Error"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. 'racecar' is a palindrome.",
+        "b": "Incorrect. It is a palindrome.",
+        "c": "Incorrect. Output should be YES or NO.",
+        "d": "Incorrect. There is no error."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which of the following is a subsequence of 'algorithm'?",
+      "answers": {
+        "a": "algo",
+        "b": "log",
+        "c": "grim",
+        "d": "math"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. 'algo' is a subsequence (characters appear in order).",
+        "b": "Incorrect. 'log' is not a subsequence (order is not preserved).",
+        "c": "Incorrect. 'grim' is not a subsequence (order is not preserved).",
+        "d": "Incorrect. 'math' is not a subsequence (order is not preserved)."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "4. What is the output for input 'hyderabad dear' in the subsequence checker?",
+      "answers": {
+        "a": "YES",
+        "b": "NO",
+        "c": "Error",
+        "d": "dear"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. 'dear' is not a subsequence of 'hyderabad'.",
+        "b": "Correct. 'dear' is not a subsequence.",
+        "c": "Incorrect. There is no error.",
+        "d": "Incorrect. Output should be YES or NO."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which operation is used to join two strings together?",
+      "answers": {
+        "a": "Concatenation",
+        "b": "Reversal",
+        "c": "Subsequence",
+        "d": "Substring"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Concatenation joins two strings.",
+        "b": "Incorrect. Reversal reverses a string.",
+        "c": "Incorrect. Subsequence checks order, not joining.",
+        "d": "Incorrect. Substring extracts part of a string."
+      },
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. What is the time complexity of checking if one string is a subsequence of another (lengths m and n)?",
+      "answers": {
+        "a": "O(1)",
+        "b": "O(m + n)",
+        "c": "O(mn)",
+        "d": "O(log n)"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. O(1) is not correct for arbitrary lengths.",
+        "b": "Correct. Each character is checked at most once.",
+        "c": "Incorrect. O(mn) is too high.",
+        "d": "Incorrect. O(log n) is too low."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "7. Which of the following is true about palindromes?",
+      "answers": {
+        "a": "They ignore spaces and punctuation",
+        "b": "They require all lowercase letters",
+        "c": "They must be at least 5 characters",
+        "d": "They are always numbers"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Palindrome detection ignores spaces and punctuation.",
+        "b": "Incorrect. Case is ignored, not required.",
+        "c": "Incorrect. Length is not required.",
+        "d": "Incorrect. Palindromes can be words or phrases."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which of the following is NOT a valid string operation?",
+      "answers": {
+        "a": "Substring extraction",
+        "b": "Pattern matching",
+        "c": "Sorting characters",
+        "d": "Integer division"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Correct. Substring extraction is valid.",
+        "b": "Correct. Pattern matching is valid.",
+        "c": "Correct. Sorting characters is valid.",
+        "d": "Incorrect. Integer division is not a string operation."
+      },
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "9. Which of the following is an application of subsequence checking?",
+      "answers": {
+        "a": "DNA sequence analysis",
+        "b": "Text search",
+        "c": "Spell checking",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "explanations": {
+        "a": "Correct. DNA analysis uses subsequence checking.",
+        "b": "Correct. Text search uses subsequence checking.",
+        "c": "Correct. Spell checking uses subsequence checking.",
+        "d": "Correct. All of these are applications."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "10. Which of the following best describes a substring?",
+      "answers": {
+        "a": "A sequence of characters that appears consecutively in a string",
+        "b": "A string with only vowels",
+        "c": "A string with only consonants",
+        "d": "A string with spaces only"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. Substring is a contiguous sequence of characters.",
+        "b": "Incorrect. Vowels are not required.",
+        "c": "Incorrect. Consonants are not required.",
+        "d": "Incorrect. Spaces are not required."
+      },
+      "difficulty": "beginner"
+    }
+  ]
+}
