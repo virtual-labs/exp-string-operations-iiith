@@ -29,7 +29,8 @@ In this experiment, you will solve two classic problems that illustrate importan
 A **palindrome** is a string that reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization. For example:
 
 - "Madam, I'm Adam." is a palindrome.
-- "Eve." is not a palindrome.
+- "Eve." is a palindrome because punctuation is ignored.
+- "Hello." is not a palindrome.
 
 #### Problem Statement
 
